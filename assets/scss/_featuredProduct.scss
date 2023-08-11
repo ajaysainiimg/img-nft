@@ -53,6 +53,21 @@
         font-size: 36px;
         font-weight: 600;
         color: $theming2;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $theming2;
+            height: 2px;
+            width: 0;
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+            &::before {
+                width: 100%;
+            }
+        }
     }
     & .featuredDetail {
         font-size: 13px;
@@ -63,5 +78,48 @@
         font-size: 17px;
         font-weight: 500;
         color: $theming2;
+    }
+    & .featuredPrice {
+        font-size: 34px;
+        font-weight: 600;
+        color: $theming2;
+    }
+    & .contactBuy {
+        font-size: 13px;
+        font-weight: 500;
+        color: $theming3;
+        padding-bottom: 2px;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $theming3;
+            height: 2px;
+            width: 0;
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+    & .featuredright {
+        & .imgTag {
+            font-size: 14px;
+            color:#fff;
+            font-weight: 500;
+            top: 20px;
+            right: 20px;
+            gap: 10px;
+            background-color: #ffffff51;
+            padding: 10px 30px;
+            backdrop-filter: blur(8px);
+            & .starImg {
+                height: 10px;
+                width: 10px;
+            }
+        }
     }
 }
